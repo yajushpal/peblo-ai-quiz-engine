@@ -37,3 +37,37 @@ PDF Processing: pdfplumber
 ---
 
 ## Project Structure
+ app/
+main.py
+pdf_parser.py
+quiz_generator.py
+models.py
+database.py
+
+README.md
+requirements.txt
+.env.example
+
+
+---
+
+## API Endpoints
+
+POST /ingest  
+Upload a PDF and extract chunks.
+
+POST /generate-quiz  
+Generate quiz questions.
+
+GET /quiz  
+Retrieve stored quiz questions.
+
+POST /submit-answer  
+Submit a student answer.
+
+---
+
+## Adaptive Difficulty Logic
+
+Correct answer → increase difficulty  
+Incorrect answer → decrease difficulty
